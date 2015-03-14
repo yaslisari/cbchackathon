@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4FD4E9F41AB4FC46005FB77A /* comment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4E9F31AB4FC46005FB77A /* comment.cpp */; };
 		4FD4E9F61AB4FC4E005FB77A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4E9F51AB4FC4E005FB77A /* main.cpp */; };
+		4FD4E9FA1AB4FDD3005FB77A /* phraseAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		4FD4E9F31AB4FC46005FB77A /* comment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = comment.cpp; path = ../../../comment.cpp; sourceTree = "<group>"; };
 		4FD4E9F51AB4FC4E005FB77A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../main.cpp; sourceTree = "<group>"; };
 		4FD4E9F71AB4FC58005FB77A /* comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = comment.h; path = ../../../comment.h; sourceTree = "<group>"; };
+		4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phraseAnalyzer.cpp; path = ../../../phraseAnalyzer.cpp; sourceTree = "<group>"; };
+		4FD4E9F91AB4FDD3005FB77A /* phraseAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = phraseAnalyzer.h; path = ../../../phraseAnalyzer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				4FD4E9F31AB4FC46005FB77A /* comment.cpp */,
+				4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */,
+				4FD4E9F91AB4FDD3005FB77A /* phraseAnalyzer.h */,
 				4FD4E9F51AB4FC4E005FB77A /* main.cpp */,
 				4FD4E9F71AB4FC58005FB77A /* comment.h */,
 			);
@@ -125,6 +130,7 @@
 			files = (
 				4FD4E9F61AB4FC4E005FB77A /* main.cpp in Sources */,
 				4FD4E9F41AB4FC46005FB77A /* comment.cpp in Sources */,
+				4FD4E9FA1AB4FDD3005FB77A /* phraseAnalyzer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
