@@ -26,6 +26,39 @@ void printVector(vector<string> v){
     }
 }
 
+//std::vector<std::string> &split(const std::string &s, char delim, std::vector<std::string> &elems) {
+//    std::stringstream ss(s);
+//    std::string item;
+//    while (std::getline(ss, item, delim)) {
+//        elems.push_back(item);
+//    }
+//    return elems;
+//}
+
+
+vector<string> stringToVector(string st){
+    vector<string> stVector;
+    
+    char * writable = new char[st.size() + 1];
+    std::copy(st.begin(), st.end(), writable);
+    writable[st.size()] = '\0'; // don't forget the terminating 0
+
+    
+    char *p = strtok(writable, " ,.?!;");
+    while (p) {
+        string word = p;
+        stVector.push_back(word);
+        //string a = questionsVector.at(i).wordsInQuestion.at(0).word;
+        //cout << "first word is: " << a << endl;
+        
+        p = strtok(NULL, " ,.?!;");
+    }
+    
+    delete [] writable;
+    
+    return stVector;
+}
+
 
 vector<string> loadWordVectors(string fileLocation){
     vector<string> wordsVector;
@@ -68,4 +101,8 @@ PhraseAnalyzer::PhraseAnalyzer(string phrase){
     //load positive list of words
     ifstream negativeWordsFile;
     vector<string> negativeWordsVector = loadWordVectors("negative-words.txt");
+    
+    vector<string> phraseVector = stringToVector(phrase);    
+    
+    
 }
