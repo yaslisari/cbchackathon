@@ -45,7 +45,7 @@ vector<string> stringToVector(string st){
     writable[st.size()] = '\0'; // don't forget the terminating 0
 
     
-    char *p = strtok(writable, " ,.?!;");
+    char *p = strtok(writable, " ,.?!;\"");
     while (p) {
         string word = p;
         transform(word.begin(), word.end(), word.begin(), ::tolower);
@@ -53,7 +53,7 @@ vector<string> stringToVector(string st){
         //string a = questionsVector.at(i).wordsInQuestion.at(0).word;
         //cout << "first word is: " << a << endl;
         
-        p = strtok(NULL, " ,.?!;");
+        p = strtok(NULL, " ,.?!;\"");
     }
     
     delete [] writable;
@@ -91,8 +91,10 @@ vector<string> loadWordVectors(string fileLocation){
     
 }
 
-int PhraseAnalyzer::scorePhrase(){
-    int score = 0;
+double PhraseAnalyzer::scorePhrase(){
+    double score = 0;
+    double numberofGoodWords = 0;
+    double numberofBadWords = 0;
     
     for (int i = 0; i < phraseVector.size(); i++) {
         string currentWord = phraseVector.at(i);
@@ -108,21 +110,26 @@ int PhraseAnalyzer::scorePhrase(){
         it = std::find(positiveWordsVector.begin(), positiveWordsVector.end(), currentWord);
         
         if (it != positiveWordsVector.end()) { //this is a positive word
-            std::cout << "Found '" << *it << "' in pos vector." << std::endl;
-            score++;
+           // std::cout << "Found '" << *it << "' in pos vector." << std::endl;
+            numberofGoodWords++;
             continue;
         }
         
         it = std::find(negativeWordsVector.begin(), negativeWordsVector.end(), currentWord);
         
         if (it != negativeWordsVector.end()) { //this is a negative word
-            std::cout << "Found '" << *it << "' in neg vector." << std::endl;
+           // std::cout << "Found '" << *it << "' in neg vector." << std::endl;
 
-            score--;
+            numberofBadWords++;
         }
         
     }
     
+    if (numberofBadWords + numberofGoodWords <= 0) {
+        score = 0.5;
+    }else{
+        score = numberofGoodWords/ (numberofGoodWords + numberofBadWords);
+    }
     return score;
 }
 

@@ -10,7 +10,18 @@
 		4FD4E9F41AB4FC46005FB77A /* comment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4E9F31AB4FC46005FB77A /* comment.cpp */; };
 		4FD4E9F61AB4FC4E005FB77A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4E9F51AB4FC4E005FB77A /* main.cpp */; };
 		4FD4E9FA1AB4FDD3005FB77A /* phraseAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */; };
+		CDD87C621AB5ECF100A1A780 /* csvReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDD87C601AB5ECF100A1A780 /* csvReader.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDD87C281AB5E77D00A1A780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD87BAB1AB5E77D00A1A780 /* TestSuite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76F6C0486A84900D96B5E;
+			remoteInfo = TestSuite;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4FD4E9E71AB4FC2D005FB77A /* CopyFiles */ = {
@@ -26,11 +37,187 @@
 
 /* Begin PBXFileReference section */
 		4FD4E9E91AB4FC2D005FB77A /* commentAnalyzer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = commentAnalyzer; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FD4E9F31AB4FC46005FB77A /* comment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = comment.cpp; path = ../../../comment.cpp; sourceTree = "<group>"; };
-		4FD4E9F51AB4FC4E005FB77A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../main.cpp; sourceTree = "<group>"; };
-		4FD4E9F71AB4FC58005FB77A /* comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = comment.h; path = ../../../comment.h; sourceTree = "<group>"; };
-		4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phraseAnalyzer.cpp; path = ../../../phraseAnalyzer.cpp; sourceTree = "<group>"; };
-		4FD4E9F91AB4FDD3005FB77A /* phraseAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = phraseAnalyzer.h; path = ../../../phraseAnalyzer.h; sourceTree = "<group>"; };
+		4FD4E9F31AB4FC46005FB77A /* comment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = comment.cpp; path = ../../comment.cpp; sourceTree = SOURCE_ROOT; };
+		4FD4E9F51AB4FC4E005FB77A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../main.cpp; sourceTree = SOURCE_ROOT; };
+		4FD4E9F71AB4FC58005FB77A /* comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = comment.h; path = ../../comment.h; sourceTree = SOURCE_ROOT; };
+		4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phraseAnalyzer.cpp; path = ../../phraseAnalyzer.cpp; sourceTree = SOURCE_ROOT; };
+		4FD4E9F91AB4FDD3005FB77A /* phraseAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = phraseAnalyzer.h; path = ../../phraseAnalyzer.h; sourceTree = SOURCE_ROOT; };
+		CDD87B611AB5E77D00A1A780 /* libbase64++.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libbase64++.h"; sourceTree = "<group>"; };
+		CDD87B631AB5E77D00A1A780 /* mempool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mempool.h; sourceTree = "<group>"; };
+		CDD87B651AB5E77D00A1A780 /* internalJSONNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = internalJSONNode.cpp; sourceTree = "<group>"; };
+		CDD87B661AB5E77D00A1A780 /* internalJSONNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = internalJSONNode.h; sourceTree = "<group>"; };
+		CDD87B671AB5E77D00A1A780 /* JSON_Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON_Base64.h; sourceTree = "<group>"; };
+		CDD87B681AB5E77D00A1A780 /* JSONAllocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONAllocator.cpp; sourceTree = "<group>"; };
+		CDD87B691AB5E77D00A1A780 /* JSONAllocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONAllocator.h; sourceTree = "<group>"; };
+		CDD87B6A1AB5E77D00A1A780 /* JSONChildren.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONChildren.cpp; sourceTree = "<group>"; };
+		CDD87B6B1AB5E77D00A1A780 /* JSONChildren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONChildren.h; sourceTree = "<group>"; };
+		CDD87B6C1AB5E77D00A1A780 /* JSONDebug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONDebug.cpp; sourceTree = "<group>"; };
+		CDD87B6D1AB5E77D00A1A780 /* JSONDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONDebug.h; sourceTree = "<group>"; };
+		CDD87B6F1AB5E77D00A1A780 /* GNU_C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNU_C.h; sourceTree = "<group>"; };
+		CDD87B701AB5E77D00A1A780 /* Strings_Defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings_Defs.h; sourceTree = "<group>"; };
+		CDD87B711AB5E77D00A1A780 /* Unknown_C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unknown_C.h; sourceTree = "<group>"; };
+		CDD87B721AB5E77D00A1A780 /* Visual_C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visual_C.h; sourceTree = "<group>"; };
+		CDD87B731AB5E77D00A1A780 /* JSONDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONDefs.h; sourceTree = "<group>"; };
+		CDD87B741AB5E77D00A1A780 /* JSONGlobals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONGlobals.h; sourceTree = "<group>"; };
+		CDD87B751AB5E77D00A1A780 /* JSONIterators.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONIterators.cpp; sourceTree = "<group>"; };
+		CDD87B761AB5E77D00A1A780 /* JSONMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONMemory.cpp; sourceTree = "<group>"; };
+		CDD87B771AB5E77D00A1A780 /* JSONMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONMemory.h; sourceTree = "<group>"; };
+		CDD87B781AB5E77D00A1A780 /* JSONMemoryPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONMemoryPool.h; sourceTree = "<group>"; };
+		CDD87B791AB5E77D00A1A780 /* JSONNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONNode.cpp; sourceTree = "<group>"; };
+		CDD87B7A1AB5E77D00A1A780 /* JSONNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONNode.h; sourceTree = "<group>"; };
+		CDD87B7B1AB5E77D00A1A780 /* JSONNode_Mutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONNode_Mutex.cpp; sourceTree = "<group>"; };
+		CDD87B7C1AB5E77D00A1A780 /* JSONPreparse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONPreparse.cpp; sourceTree = "<group>"; };
+		CDD87B7D1AB5E77D00A1A780 /* JSONPreparse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONPreparse.h; sourceTree = "<group>"; };
+		CDD87B7E1AB5E77D00A1A780 /* JSONSharedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONSharedString.h; sourceTree = "<group>"; };
+		CDD87B7F1AB5E77D00A1A780 /* JSONSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONSingleton.h; sourceTree = "<group>"; };
+		CDD87B801AB5E77D00A1A780 /* JSONStats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONStats.h; sourceTree = "<group>"; };
+		CDD87B811AB5E77D00A1A780 /* JSONStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONStream.cpp; sourceTree = "<group>"; };
+		CDD87B821AB5E77D00A1A780 /* JSONStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONStream.h; sourceTree = "<group>"; };
+		CDD87B831AB5E77D00A1A780 /* JSONValidator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONValidator.cpp; sourceTree = "<group>"; };
+		CDD87B841AB5E77D00A1A780 /* JSONValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONValidator.h; sourceTree = "<group>"; };
+		CDD87B851AB5E77D00A1A780 /* JSONWorker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONWorker.cpp; sourceTree = "<group>"; };
+		CDD87B861AB5E77D00A1A780 /* JSONWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONWorker.h; sourceTree = "<group>"; };
+		CDD87B871AB5E77D00A1A780 /* JSONWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSONWriter.cpp; sourceTree = "<group>"; };
+		CDD87B881AB5E77D00A1A780 /* libjson.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libjson.cpp; sourceTree = "<group>"; };
+		CDD87B891AB5E77D00A1A780 /* NumberToString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberToString.h; sourceTree = "<group>"; };
+		CDD87B8C1AB5E77D00A1A780 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CDD87B8D1AB5E77D00A1A780 /* Options.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Options.txt; sourceTree = "<group>"; };
+		CDD87B8F1AB5E77D00A1A780 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CDD87B901AB5E77D00A1A780 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		CDD87B911AB5E77D00A1A780 /* Checklist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Checklist.txt; sourceTree = "<group>"; };
+		CDD87B921AB5E77D00A1A780 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CDD87B931AB5E77D00A1A780 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		CDD87B941AB5E77D00A1A780 /* RunTestSuite2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RunTestSuite2.cpp; sourceTree = "<group>"; };
+		CDD87B951AB5E77D00A1A780 /* RunTestSuite2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTestSuite2.h; sourceTree = "<group>"; };
+		CDD87B961AB5E77D00A1A780 /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
+		CDD87B971AB5E77D00A1A780 /* TestAssign.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestAssign.cpp; sourceTree = "<group>"; };
+		CDD87B981AB5E77D00A1A780 /* TestBinary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestBinary.cpp; sourceTree = "<group>"; };
+		CDD87B991AB5E77D00A1A780 /* TestChildren.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestChildren.cpp; sourceTree = "<group>"; };
+		CDD87B9A1AB5E77D00A1A780 /* TestComments.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestComments.cpp; sourceTree = "<group>"; };
+		CDD87B9B1AB5E77D00A1A780 /* TestConverters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestConverters.cpp; sourceTree = "<group>"; };
+		CDD87B9C1AB5E77D00A1A780 /* TestCtors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestCtors.cpp; sourceTree = "<group>"; };
+		CDD87B9D1AB5E77D00A1A780 /* TestEquality.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestEquality.cpp; sourceTree = "<group>"; };
+		CDD87B9E1AB5E77D00A1A780 /* TestFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestFunctions.cpp; sourceTree = "<group>"; };
+		CDD87B9F1AB5E77D00A1A780 /* TestInequality.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestInequality.cpp; sourceTree = "<group>"; };
+		CDD87BA01AB5E77D00A1A780 /* TestInspectors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestInspectors.cpp; sourceTree = "<group>"; };
+		CDD87BA11AB5E77D00A1A780 /* TestIterators.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestIterators.cpp; sourceTree = "<group>"; };
+		CDD87BA21AB5E77D00A1A780 /* TestMutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestMutex.cpp; sourceTree = "<group>"; };
+		CDD87BA31AB5E77D00A1A780 /* TestNamespace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestNamespace.cpp; sourceTree = "<group>"; };
+		CDD87BA41AB5E77D00A1A780 /* TestRefCounting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestRefCounting.cpp; sourceTree = "<group>"; };
+		CDD87BA51AB5E77D00A1A780 /* TestSharedString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestSharedString.cpp; sourceTree = "<group>"; };
+		CDD87BA61AB5E77D00A1A780 /* TestStreams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestStreams.cpp; sourceTree = "<group>"; };
+		CDD87BA71AB5E77D00A1A780 /* TestString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestString.cpp; sourceTree = "<group>"; };
+		CDD87BA81AB5E77D00A1A780 /* TestSuite.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TestSuite.1; sourceTree = "<group>"; };
+		CDD87BA91AB5E77D00A1A780 /* TestSuite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestSuite.cpp; sourceTree = "<group>"; };
+		CDD87BAA1AB5E77D00A1A780 /* TestSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuite.h; sourceTree = "<group>"; };
+		CDD87BAB1AB5E77D00A1A780 /* TestSuite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TestSuite.xcodeproj; sourceTree = "<group>"; };
+		CDD87BAE1AB5E77D00A1A780 /* TestSuite2Creator.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = TestSuite2Creator.php; sourceTree = "<group>"; };
+		CDD87BAF1AB5E77D00A1A780 /* TestValidator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestValidator.cpp; sourceTree = "<group>"; };
+		CDD87BB01AB5E77D00A1A780 /* TestWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestWriter.cpp; sourceTree = "<group>"; };
+		CDD87BB11AB5E77D00A1A780 /* UnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnitTest.cpp; sourceTree = "<group>"; };
+		CDD87BB21AB5E77D00A1A780 /* UnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
+		CDD87BB31AB5E77D00A1A780 /* UStringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UStringTest.h; sourceTree = "<group>"; };
+		CDD87BB51AB5E77D00A1A780 /* BaseTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTest.h; sourceTree = "<group>"; };
+		CDD87BB71AB5E77D00A1A780 /* json_decode64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_decode64.cpp; sourceTree = "<group>"; };
+		CDD87BB81AB5E77D00A1A780 /* json_decode64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_decode64.h; sourceTree = "<group>"; };
+		CDD87BB91AB5E77D00A1A780 /* json_encode64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_encode64.cpp; sourceTree = "<group>"; };
+		CDD87BBA1AB5E77D00A1A780 /* json_encode64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_encode64.h; sourceTree = "<group>"; };
+		CDD87BBC1AB5E77D00A1A780 /* JSON_ASSERT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSON_ASSERT.cpp; sourceTree = "<group>"; };
+		CDD87BBD1AB5E77D00A1A780 /* JSON_ASSERT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON_ASSERT.h; sourceTree = "<group>"; };
+		CDD87BBE1AB5E77D00A1A780 /* JSON_ASSERT_SAFE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSON_ASSERT_SAFE.cpp; sourceTree = "<group>"; };
+		CDD87BBF1AB5E77D00A1A780 /* JSON_ASSERT_SAFE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON_ASSERT_SAFE.h; sourceTree = "<group>"; };
+		CDD87BC01AB5E77D00A1A780 /* JSON_FAIL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSON_FAIL.cpp; sourceTree = "<group>"; };
+		CDD87BC11AB5E77D00A1A780 /* JSON_FAIL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON_FAIL.h; sourceTree = "<group>"; };
+		CDD87BC21AB5E77D00A1A780 /* JSON_FAIL_SAFE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JSON_FAIL_SAFE.cpp; sourceTree = "<group>"; };
+		CDD87BC31AB5E77D00A1A780 /* JSON_FAIL_SAFE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON_FAIL_SAFE.h; sourceTree = "<group>"; };
+		CDD87BC51AB5E77D00A1A780 /* jsonSingleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsonSingleton.cpp; sourceTree = "<group>"; };
+		CDD87BC61AB5E77D00A1A780 /* jsonSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsonSingleton.h; sourceTree = "<group>"; };
+		CDD87BC81AB5E77D00A1A780 /* isValidArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidArray.cpp; sourceTree = "<group>"; };
+		CDD87BC91AB5E77D00A1A780 /* isValidArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidArray.h; sourceTree = "<group>"; };
+		CDD87BCA1AB5E77D00A1A780 /* isValidMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidMember.cpp; sourceTree = "<group>"; };
+		CDD87BCB1AB5E77D00A1A780 /* isValidMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidMember.h; sourceTree = "<group>"; };
+		CDD87BCC1AB5E77D00A1A780 /* isValidNamedObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidNamedObject.cpp; sourceTree = "<group>"; };
+		CDD87BCD1AB5E77D00A1A780 /* isValidNamedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidNamedObject.h; sourceTree = "<group>"; };
+		CDD87BCE1AB5E77D00A1A780 /* isValidNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidNumber.cpp; sourceTree = "<group>"; };
+		CDD87BCF1AB5E77D00A1A780 /* isValidNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidNumber.h; sourceTree = "<group>"; };
+		CDD87BD01AB5E77D00A1A780 /* isValidObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidObject.cpp; sourceTree = "<group>"; };
+		CDD87BD11AB5E77D00A1A780 /* isValidObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidObject.h; sourceTree = "<group>"; };
+		CDD87BD21AB5E77D00A1A780 /* isValidPartialRoot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidPartialRoot.cpp; sourceTree = "<group>"; };
+		CDD87BD31AB5E77D00A1A780 /* isValidPartialRoot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidPartialRoot.h; sourceTree = "<group>"; };
+		CDD87BD41AB5E77D00A1A780 /* isValidRoot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidRoot.cpp; sourceTree = "<group>"; };
+		CDD87BD51AB5E77D00A1A780 /* isValidRoot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidRoot.h; sourceTree = "<group>"; };
+		CDD87BD61AB5E77D00A1A780 /* isValidString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValidString.cpp; sourceTree = "<group>"; };
+		CDD87BD71AB5E77D00A1A780 /* isValidString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidString.h; sourceTree = "<group>"; };
+		CDD87BD91AB5E77D00A1A780 /* validyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = validyMacros.h; sourceTree = "<group>"; };
+		CDD87BDA1AB5E77D00A1A780 /* securityTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = securityTest.cpp; sourceTree = "<group>"; };
+		CDD87BDB1AB5E77D00A1A780 /* securityTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = securityTest.h; sourceTree = "<group>"; };
+		CDD87BDD1AB5E77D00A1A780 /* _areFloatsEqual.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = _areFloatsEqual.cpp; sourceTree = "<group>"; };
+		CDD87BDE1AB5E77D00A1A780 /* _areFloatsEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _areFloatsEqual.h; sourceTree = "<group>"; };
+		CDD87BDF1AB5E77D00A1A780 /* _atof.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = _atof.cpp; sourceTree = "<group>"; };
+		CDD87BE01AB5E77D00A1A780 /* _atof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _atof.h; sourceTree = "<group>"; };
+		CDD87BE11AB5E77D00A1A780 /* _ftoa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = _ftoa.cpp; sourceTree = "<group>"; };
+		CDD87BE21AB5E77D00A1A780 /* _ftoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _ftoa.h; sourceTree = "<group>"; };
+		CDD87BE31AB5E77D00A1A780 /* _itoa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = _itoa.cpp; sourceTree = "<group>"; };
+		CDD87BE41AB5E77D00A1A780 /* _itoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _itoa.h; sourceTree = "<group>"; };
+		CDD87BE51AB5E77D00A1A780 /* _uitoa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = _uitoa.cpp; sourceTree = "<group>"; };
+		CDD87BE61AB5E77D00A1A780 /* _uitoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _uitoa.h; sourceTree = "<group>"; };
+		CDD87BE71AB5E77D00A1A780 /* getLenSize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getLenSize.cpp; sourceTree = "<group>"; };
+		CDD87BE81AB5E77D00A1A780 /* getLenSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getLenSize.h; sourceTree = "<group>"; };
+		CDD87BE91AB5E77D00A1A780 /* isNumeric.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isNumeric.cpp; sourceTree = "<group>"; };
+		CDD87BEA1AB5E77D00A1A780 /* isNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isNumeric.h; sourceTree = "<group>"; };
+		CDD87BEB1AB5E77D00A1A780 /* Documentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Documentation.pdf; sourceTree = "<group>"; };
+		CDD87BEE1AB5E77D00A1A780 /* array.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = array.htm; sourceTree = "<group>"; };
+		CDD87BEF1AB5E77D00A1A780 /* basic_parser.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = basic_parser.htm; sourceTree = "<group>"; };
+		CDD87BF01AB5E77D00A1A780 /* child_node.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = child_node.htm; sourceTree = "<group>"; };
+		CDD87BF11AB5E77D00A1A780 /* simple_write.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = simple_write.htm; sourceTree = "<group>"; };
+		CDD87BF31AB5E77D00A1A780 /* array.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = array.htm; sourceTree = "<group>"; };
+		CDD87BF41AB5E77D00A1A780 /* basic_parser.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = basic_parser.htm; sourceTree = "<group>"; };
+		CDD87BF51AB5E77D00A1A780 /* child_node.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = child_node.htm; sourceTree = "<group>"; };
+		CDD87BF71AB5E77D00A1A780 /* shAutoloader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = shAutoloader.js; sourceTree = "<group>"; };
+		CDD87BF81AB5E77D00A1A780 /* shBrushCpp.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = shBrushCpp.js; sourceTree = "<group>"; };
+		CDD87BF91AB5E77D00A1A780 /* shCore.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = shCore.js; sourceTree = "<group>"; };
+		CDD87BFA1AB5E77D00A1A780 /* shLegacy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = shLegacy.js; sourceTree = "<group>"; };
+		CDD87BFB1AB5E77D00A1A780 /* simple_write.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = simple_write.htm; sourceTree = "<group>"; };
+		CDD87BFD1AB5E77D00A1A780 /* shCore.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCore.css; sourceTree = "<group>"; };
+		CDD87BFE1AB5E77D00A1A780 /* shCoreDefault.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreDefault.css; sourceTree = "<group>"; };
+		CDD87BFF1AB5E77D00A1A780 /* shCoreDjango.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreDjango.css; sourceTree = "<group>"; };
+		CDD87C001AB5E77D00A1A780 /* shCoreEclipse.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreEclipse.css; sourceTree = "<group>"; };
+		CDD87C011AB5E77D00A1A780 /* shCoreEmacs.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreEmacs.css; sourceTree = "<group>"; };
+		CDD87C021AB5E77D00A1A780 /* shCoreFadeToGrey.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreFadeToGrey.css; sourceTree = "<group>"; };
+		CDD87C031AB5E77D00A1A780 /* shCoreMDUltra.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreMDUltra.css; sourceTree = "<group>"; };
+		CDD87C041AB5E77D00A1A780 /* shCoreMidnight.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreMidnight.css; sourceTree = "<group>"; };
+		CDD87C051AB5E77D00A1A780 /* shCoreRDark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shCoreRDark.css; sourceTree = "<group>"; };
+		CDD87C061AB5E77D00A1A780 /* shThemeDefault.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeDefault.css; sourceTree = "<group>"; };
+		CDD87C071AB5E77D00A1A780 /* shThemeDjango.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeDjango.css; sourceTree = "<group>"; };
+		CDD87C081AB5E77D00A1A780 /* shThemeEclipse.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeEclipse.css; sourceTree = "<group>"; };
+		CDD87C091AB5E77D00A1A780 /* shThemeEmacs.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeEmacs.css; sourceTree = "<group>"; };
+		CDD87C0A1AB5E77D00A1A780 /* shThemeFadeToGrey.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeFadeToGrey.css; sourceTree = "<group>"; };
+		CDD87C0B1AB5E77D00A1A780 /* shThemeMDUltra.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeMDUltra.css; sourceTree = "<group>"; };
+		CDD87C0C1AB5E77D00A1A780 /* shThemeMidnight.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeMidnight.css; sourceTree = "<group>"; };
+		CDD87C0D1AB5E77D00A1A780 /* shThemeRDark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = shThemeRDark.css; sourceTree = "<group>"; };
+		CDD87C0E1AB5E77D00A1A780 /* JSONOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONOptions.h; sourceTree = "<group>"; };
+		CDD87C0F1AB5E77D00A1A780 /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjson.a; sourceTree = "<group>"; };
+		CDD87C101AB5E77D00A1A780 /* libjson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libjson.h; sourceTree = "<group>"; };
+		CDD87C111AB5E77D00A1A780 /* libjson.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = libjson.vcproj; sourceTree = "<group>"; };
+		CDD87C121AB5E77D00A1A780 /* libjson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = libjson.xcodeproj; sourceTree = "<group>"; };
+		CDD87C151AB5E77D00A1A780 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		CDD87C161AB5E77D00A1A780 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		CDD87C181AB5E77D00A1A780 /* internalJSONNode.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = internalJSONNode.o; sourceTree = "<group>"; };
+		CDD87C191AB5E77D00A1A780 /* JSONAllocator.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONAllocator.o; sourceTree = "<group>"; };
+		CDD87C1A1AB5E77D00A1A780 /* JSONChildren.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONChildren.o; sourceTree = "<group>"; };
+		CDD87C1B1AB5E77D00A1A780 /* JSONDebug.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONDebug.o; sourceTree = "<group>"; };
+		CDD87C1C1AB5E77D00A1A780 /* JSONIterators.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONIterators.o; sourceTree = "<group>"; };
+		CDD87C1D1AB5E77D00A1A780 /* JSONMemory.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONMemory.o; sourceTree = "<group>"; };
+		CDD87C1E1AB5E77D00A1A780 /* JSONNode.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONNode.o; sourceTree = "<group>"; };
+		CDD87C1F1AB5E77D00A1A780 /* JSONNode_Mutex.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONNode_Mutex.o; sourceTree = "<group>"; };
+		CDD87C201AB5E77D00A1A780 /* JSONPreparse.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONPreparse.o; sourceTree = "<group>"; };
+		CDD87C211AB5E77D00A1A780 /* JSONStream.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONStream.o; sourceTree = "<group>"; };
+		CDD87C221AB5E77D00A1A780 /* JSONValidator.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONValidator.o; sourceTree = "<group>"; };
+		CDD87C231AB5E77D00A1A780 /* JSONWorker.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONWorker.o; sourceTree = "<group>"; };
+		CDD87C241AB5E77D00A1A780 /* JSONWriter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONWriter.o; sourceTree = "<group>"; };
+		CDD87C251AB5E77D00A1A780 /* libjson.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = libjson.o; sourceTree = "<group>"; };
+		CDD87C601AB5ECF100A1A780 /* csvReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = csvReader.cpp; path = ../../csvReader.cpp; sourceTree = SOURCE_ROOT; };
+		CDD87C611AB5ECF100A1A780 /* csvReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = csvReader.h; path = ../../csvReader.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD4E9EB1AB4FC2D005FB77A /* commentAnalyzer */,
+				CDD87B5D1AB5E77D00A1A780 /* libjson */,
 				4FD4E9EA1AB4FC2D005FB77A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,8 +256,382 @@
 				4FD4E9F81AB4FDD3005FB77A /* phraseAnalyzer.cpp */,
 				4FD4E9F91AB4FDD3005FB77A /* phraseAnalyzer.h */,
 				4FD4E9F51AB4FC4E005FB77A /* main.cpp */,
+				CDD87C601AB5ECF100A1A780 /* csvReader.cpp */,
+				CDD87C611AB5ECF100A1A780 /* csvReader.h */,
 			);
 			path = commentAnalyzer;
+			sourceTree = "<group>";
+		};
+		CDD87B5D1AB5E77D00A1A780 /* libjson */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B5E1AB5E77D00A1A780 /* _internal */,
+				CDD87BEB1AB5E77D00A1A780 /* Documentation.pdf */,
+				CDD87BEC1AB5E77D00A1A780 /* Getting Started */,
+				CDD87C0E1AB5E77D00A1A780 /* JSONOptions.h */,
+				CDD87C0F1AB5E77D00A1A780 /* libjson.a */,
+				CDD87C101AB5E77D00A1A780 /* libjson.h */,
+				CDD87C111AB5E77D00A1A780 /* libjson.vcproj */,
+				CDD87C121AB5E77D00A1A780 /* libjson.xcodeproj */,
+				CDD87C151AB5E77D00A1A780 /* License.txt */,
+				CDD87C161AB5E77D00A1A780 /* makefile */,
+				CDD87C171AB5E77D00A1A780 /* Objects_static */,
+			);
+			path = libjson;
+			sourceTree = SOURCE_ROOT;
+		};
+		CDD87B5E1AB5E77D00A1A780 /* _internal */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B5F1AB5E77D00A1A780 /* Dependencies */,
+				CDD87B641AB5E77D00A1A780 /* Source */,
+				CDD87B8A1AB5E77D00A1A780 /* TestSuite */,
+				CDD87BB41AB5E77D00A1A780 /* TestSuite2 */,
+			);
+			path = _internal;
+			sourceTree = "<group>";
+		};
+		CDD87B5F1AB5E77D00A1A780 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B601AB5E77D00A1A780 /* libbase64++ */,
+				CDD87B621AB5E77D00A1A780 /* mempool++ */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		CDD87B601AB5E77D00A1A780 /* libbase64++ */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B611AB5E77D00A1A780 /* libbase64++.h */,
+			);
+			path = "libbase64++";
+			sourceTree = "<group>";
+		};
+		CDD87B621AB5E77D00A1A780 /* mempool++ */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B631AB5E77D00A1A780 /* mempool.h */,
+			);
+			path = "mempool++";
+			sourceTree = "<group>";
+		};
+		CDD87B641AB5E77D00A1A780 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B651AB5E77D00A1A780 /* internalJSONNode.cpp */,
+				CDD87B661AB5E77D00A1A780 /* internalJSONNode.h */,
+				CDD87B671AB5E77D00A1A780 /* JSON_Base64.h */,
+				CDD87B681AB5E77D00A1A780 /* JSONAllocator.cpp */,
+				CDD87B691AB5E77D00A1A780 /* JSONAllocator.h */,
+				CDD87B6A1AB5E77D00A1A780 /* JSONChildren.cpp */,
+				CDD87B6B1AB5E77D00A1A780 /* JSONChildren.h */,
+				CDD87B6C1AB5E77D00A1A780 /* JSONDebug.cpp */,
+				CDD87B6D1AB5E77D00A1A780 /* JSONDebug.h */,
+				CDD87B6E1AB5E77D00A1A780 /* JSONDefs */,
+				CDD87B731AB5E77D00A1A780 /* JSONDefs.h */,
+				CDD87B741AB5E77D00A1A780 /* JSONGlobals.h */,
+				CDD87B751AB5E77D00A1A780 /* JSONIterators.cpp */,
+				CDD87B761AB5E77D00A1A780 /* JSONMemory.cpp */,
+				CDD87B771AB5E77D00A1A780 /* JSONMemory.h */,
+				CDD87B781AB5E77D00A1A780 /* JSONMemoryPool.h */,
+				CDD87B791AB5E77D00A1A780 /* JSONNode.cpp */,
+				CDD87B7A1AB5E77D00A1A780 /* JSONNode.h */,
+				CDD87B7B1AB5E77D00A1A780 /* JSONNode_Mutex.cpp */,
+				CDD87B7C1AB5E77D00A1A780 /* JSONPreparse.cpp */,
+				CDD87B7D1AB5E77D00A1A780 /* JSONPreparse.h */,
+				CDD87B7E1AB5E77D00A1A780 /* JSONSharedString.h */,
+				CDD87B7F1AB5E77D00A1A780 /* JSONSingleton.h */,
+				CDD87B801AB5E77D00A1A780 /* JSONStats.h */,
+				CDD87B811AB5E77D00A1A780 /* JSONStream.cpp */,
+				CDD87B821AB5E77D00A1A780 /* JSONStream.h */,
+				CDD87B831AB5E77D00A1A780 /* JSONValidator.cpp */,
+				CDD87B841AB5E77D00A1A780 /* JSONValidator.h */,
+				CDD87B851AB5E77D00A1A780 /* JSONWorker.cpp */,
+				CDD87B861AB5E77D00A1A780 /* JSONWorker.h */,
+				CDD87B871AB5E77D00A1A780 /* JSONWriter.cpp */,
+				CDD87B881AB5E77D00A1A780 /* libjson.cpp */,
+				CDD87B891AB5E77D00A1A780 /* NumberToString.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CDD87B6E1AB5E77D00A1A780 /* JSONDefs */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B6F1AB5E77D00A1A780 /* GNU_C.h */,
+				CDD87B701AB5E77D00A1A780 /* Strings_Defs.h */,
+				CDD87B711AB5E77D00A1A780 /* Unknown_C.h */,
+				CDD87B721AB5E77D00A1A780 /* Visual_C.h */,
+			);
+			path = JSONDefs;
+			sourceTree = "<group>";
+		};
+		CDD87B8A1AB5E77D00A1A780 /* TestSuite */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B8B1AB5E77D00A1A780 /* All */,
+				CDD87B8E1AB5E77D00A1A780 /* Benchmark */,
+				CDD87B911AB5E77D00A1A780 /* Checklist.txt */,
+				CDD87B921AB5E77D00A1A780 /* main.cpp */,
+				CDD87B931AB5E77D00A1A780 /* makefile */,
+				CDD87B941AB5E77D00A1A780 /* RunTestSuite2.cpp */,
+				CDD87B951AB5E77D00A1A780 /* RunTestSuite2.h */,
+				CDD87B961AB5E77D00A1A780 /* StringTest.h */,
+				CDD87B971AB5E77D00A1A780 /* TestAssign.cpp */,
+				CDD87B981AB5E77D00A1A780 /* TestBinary.cpp */,
+				CDD87B991AB5E77D00A1A780 /* TestChildren.cpp */,
+				CDD87B9A1AB5E77D00A1A780 /* TestComments.cpp */,
+				CDD87B9B1AB5E77D00A1A780 /* TestConverters.cpp */,
+				CDD87B9C1AB5E77D00A1A780 /* TestCtors.cpp */,
+				CDD87B9D1AB5E77D00A1A780 /* TestEquality.cpp */,
+				CDD87B9E1AB5E77D00A1A780 /* TestFunctions.cpp */,
+				CDD87B9F1AB5E77D00A1A780 /* TestInequality.cpp */,
+				CDD87BA01AB5E77D00A1A780 /* TestInspectors.cpp */,
+				CDD87BA11AB5E77D00A1A780 /* TestIterators.cpp */,
+				CDD87BA21AB5E77D00A1A780 /* TestMutex.cpp */,
+				CDD87BA31AB5E77D00A1A780 /* TestNamespace.cpp */,
+				CDD87BA41AB5E77D00A1A780 /* TestRefCounting.cpp */,
+				CDD87BA51AB5E77D00A1A780 /* TestSharedString.cpp */,
+				CDD87BA61AB5E77D00A1A780 /* TestStreams.cpp */,
+				CDD87BA71AB5E77D00A1A780 /* TestString.cpp */,
+				CDD87BA81AB5E77D00A1A780 /* TestSuite.1 */,
+				CDD87BA91AB5E77D00A1A780 /* TestSuite.cpp */,
+				CDD87BAA1AB5E77D00A1A780 /* TestSuite.h */,
+				CDD87BAB1AB5E77D00A1A780 /* TestSuite.xcodeproj */,
+				CDD87BAE1AB5E77D00A1A780 /* TestSuite2Creator.php */,
+				CDD87BAF1AB5E77D00A1A780 /* TestValidator.cpp */,
+				CDD87BB01AB5E77D00A1A780 /* TestWriter.cpp */,
+				CDD87BB11AB5E77D00A1A780 /* UnitTest.cpp */,
+				CDD87BB21AB5E77D00A1A780 /* UnitTest.h */,
+				CDD87BB31AB5E77D00A1A780 /* UStringTest.h */,
+			);
+			path = TestSuite;
+			sourceTree = "<group>";
+		};
+		CDD87B8B1AB5E77D00A1A780 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B8C1AB5E77D00A1A780 /* main.cpp */,
+				CDD87B8D1AB5E77D00A1A780 /* Options.txt */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		CDD87B8E1AB5E77D00A1A780 /* Benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87B8F1AB5E77D00A1A780 /* main.cpp */,
+				CDD87B901AB5E77D00A1A780 /* makefile */,
+			);
+			path = Benchmark;
+			sourceTree = "<group>";
+		};
+		CDD87BAC1AB5E77D00A1A780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87C291AB5E77D00A1A780 /* TestSuite */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDD87BB41AB5E77D00A1A780 /* TestSuite2 */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BB51AB5E77D00A1A780 /* BaseTest.h */,
+				CDD87BB61AB5E77D00A1A780 /* JSON_Base64 */,
+				CDD87BBB1AB5E77D00A1A780 /* JSONDebug */,
+				CDD87BC41AB5E77D00A1A780 /* JSONGlobals */,
+				CDD87BC71AB5E77D00A1A780 /* JSONValidator */,
+				CDD87BDC1AB5E77D00A1A780 /* NumberToString */,
+			);
+			path = TestSuite2;
+			sourceTree = "<group>";
+		};
+		CDD87BB61AB5E77D00A1A780 /* JSON_Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BB71AB5E77D00A1A780 /* json_decode64.cpp */,
+				CDD87BB81AB5E77D00A1A780 /* json_decode64.h */,
+				CDD87BB91AB5E77D00A1A780 /* json_encode64.cpp */,
+				CDD87BBA1AB5E77D00A1A780 /* json_encode64.h */,
+			);
+			path = JSON_Base64;
+			sourceTree = "<group>";
+		};
+		CDD87BBB1AB5E77D00A1A780 /* JSONDebug */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BBC1AB5E77D00A1A780 /* JSON_ASSERT.cpp */,
+				CDD87BBD1AB5E77D00A1A780 /* JSON_ASSERT.h */,
+				CDD87BBE1AB5E77D00A1A780 /* JSON_ASSERT_SAFE.cpp */,
+				CDD87BBF1AB5E77D00A1A780 /* JSON_ASSERT_SAFE.h */,
+				CDD87BC01AB5E77D00A1A780 /* JSON_FAIL.cpp */,
+				CDD87BC11AB5E77D00A1A780 /* JSON_FAIL.h */,
+				CDD87BC21AB5E77D00A1A780 /* JSON_FAIL_SAFE.cpp */,
+				CDD87BC31AB5E77D00A1A780 /* JSON_FAIL_SAFE.h */,
+			);
+			path = JSONDebug;
+			sourceTree = "<group>";
+		};
+		CDD87BC41AB5E77D00A1A780 /* JSONGlobals */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BC51AB5E77D00A1A780 /* jsonSingleton.cpp */,
+				CDD87BC61AB5E77D00A1A780 /* jsonSingleton.h */,
+			);
+			path = JSONGlobals;
+			sourceTree = "<group>";
+		};
+		CDD87BC71AB5E77D00A1A780 /* JSONValidator */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BC81AB5E77D00A1A780 /* isValidArray.cpp */,
+				CDD87BC91AB5E77D00A1A780 /* isValidArray.h */,
+				CDD87BCA1AB5E77D00A1A780 /* isValidMember.cpp */,
+				CDD87BCB1AB5E77D00A1A780 /* isValidMember.h */,
+				CDD87BCC1AB5E77D00A1A780 /* isValidNamedObject.cpp */,
+				CDD87BCD1AB5E77D00A1A780 /* isValidNamedObject.h */,
+				CDD87BCE1AB5E77D00A1A780 /* isValidNumber.cpp */,
+				CDD87BCF1AB5E77D00A1A780 /* isValidNumber.h */,
+				CDD87BD01AB5E77D00A1A780 /* isValidObject.cpp */,
+				CDD87BD11AB5E77D00A1A780 /* isValidObject.h */,
+				CDD87BD21AB5E77D00A1A780 /* isValidPartialRoot.cpp */,
+				CDD87BD31AB5E77D00A1A780 /* isValidPartialRoot.h */,
+				CDD87BD41AB5E77D00A1A780 /* isValidRoot.cpp */,
+				CDD87BD51AB5E77D00A1A780 /* isValidRoot.h */,
+				CDD87BD61AB5E77D00A1A780 /* isValidString.cpp */,
+				CDD87BD71AB5E77D00A1A780 /* isValidString.h */,
+				CDD87BD81AB5E77D00A1A780 /* Resources */,
+				CDD87BDA1AB5E77D00A1A780 /* securityTest.cpp */,
+				CDD87BDB1AB5E77D00A1A780 /* securityTest.h */,
+			);
+			path = JSONValidator;
+			sourceTree = "<group>";
+		};
+		CDD87BD81AB5E77D00A1A780 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BD91AB5E77D00A1A780 /* validyMacros.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDD87BDC1AB5E77D00A1A780 /* NumberToString */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BDD1AB5E77D00A1A780 /* _areFloatsEqual.cpp */,
+				CDD87BDE1AB5E77D00A1A780 /* _areFloatsEqual.h */,
+				CDD87BDF1AB5E77D00A1A780 /* _atof.cpp */,
+				CDD87BE01AB5E77D00A1A780 /* _atof.h */,
+				CDD87BE11AB5E77D00A1A780 /* _ftoa.cpp */,
+				CDD87BE21AB5E77D00A1A780 /* _ftoa.h */,
+				CDD87BE31AB5E77D00A1A780 /* _itoa.cpp */,
+				CDD87BE41AB5E77D00A1A780 /* _itoa.h */,
+				CDD87BE51AB5E77D00A1A780 /* _uitoa.cpp */,
+				CDD87BE61AB5E77D00A1A780 /* _uitoa.h */,
+				CDD87BE71AB5E77D00A1A780 /* getLenSize.cpp */,
+				CDD87BE81AB5E77D00A1A780 /* getLenSize.h */,
+				CDD87BE91AB5E77D00A1A780 /* isNumeric.cpp */,
+				CDD87BEA1AB5E77D00A1A780 /* isNumeric.h */,
+			);
+			path = NumberToString;
+			sourceTree = "<group>";
+		};
+		CDD87BEC1AB5E77D00A1A780 /* Getting Started */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BED1AB5E77D00A1A780 /* C++ Interface */,
+				CDD87BF21AB5E77D00A1A780 /* Library Interface */,
+			);
+			path = "Getting Started";
+			sourceTree = "<group>";
+		};
+		CDD87BED1AB5E77D00A1A780 /* C++ Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BEE1AB5E77D00A1A780 /* array.htm */,
+				CDD87BEF1AB5E77D00A1A780 /* basic_parser.htm */,
+				CDD87BF01AB5E77D00A1A780 /* child_node.htm */,
+				CDD87BF11AB5E77D00A1A780 /* simple_write.htm */,
+			);
+			path = "C++ Interface";
+			sourceTree = "<group>";
+		};
+		CDD87BF21AB5E77D00A1A780 /* Library Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BF31AB5E77D00A1A780 /* array.htm */,
+				CDD87BF41AB5E77D00A1A780 /* basic_parser.htm */,
+				CDD87BF51AB5E77D00A1A780 /* child_node.htm */,
+				CDD87BF61AB5E77D00A1A780 /* scripts */,
+				CDD87BFB1AB5E77D00A1A780 /* simple_write.htm */,
+				CDD87BFC1AB5E77D00A1A780 /* styles */,
+			);
+			path = "Library Interface";
+			sourceTree = "<group>";
+		};
+		CDD87BF61AB5E77D00A1A780 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BF71AB5E77D00A1A780 /* shAutoloader.js */,
+				CDD87BF81AB5E77D00A1A780 /* shBrushCpp.js */,
+				CDD87BF91AB5E77D00A1A780 /* shCore.js */,
+				CDD87BFA1AB5E77D00A1A780 /* shLegacy.js */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		CDD87BFC1AB5E77D00A1A780 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87BFD1AB5E77D00A1A780 /* shCore.css */,
+				CDD87BFE1AB5E77D00A1A780 /* shCoreDefault.css */,
+				CDD87BFF1AB5E77D00A1A780 /* shCoreDjango.css */,
+				CDD87C001AB5E77D00A1A780 /* shCoreEclipse.css */,
+				CDD87C011AB5E77D00A1A780 /* shCoreEmacs.css */,
+				CDD87C021AB5E77D00A1A780 /* shCoreFadeToGrey.css */,
+				CDD87C031AB5E77D00A1A780 /* shCoreMDUltra.css */,
+				CDD87C041AB5E77D00A1A780 /* shCoreMidnight.css */,
+				CDD87C051AB5E77D00A1A780 /* shCoreRDark.css */,
+				CDD87C061AB5E77D00A1A780 /* shThemeDefault.css */,
+				CDD87C071AB5E77D00A1A780 /* shThemeDjango.css */,
+				CDD87C081AB5E77D00A1A780 /* shThemeEclipse.css */,
+				CDD87C091AB5E77D00A1A780 /* shThemeEmacs.css */,
+				CDD87C0A1AB5E77D00A1A780 /* shThemeFadeToGrey.css */,
+				CDD87C0B1AB5E77D00A1A780 /* shThemeMDUltra.css */,
+				CDD87C0C1AB5E77D00A1A780 /* shThemeMidnight.css */,
+				CDD87C0D1AB5E77D00A1A780 /* shThemeRDark.css */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		CDD87C131AB5E77D00A1A780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDD87C171AB5E77D00A1A780 /* Objects_static */ = {
+			isa = PBXGroup;
+			children = (
+				CDD87C181AB5E77D00A1A780 /* internalJSONNode.o */,
+				CDD87C191AB5E77D00A1A780 /* JSONAllocator.o */,
+				CDD87C1A1AB5E77D00A1A780 /* JSONChildren.o */,
+				CDD87C1B1AB5E77D00A1A780 /* JSONDebug.o */,
+				CDD87C1C1AB5E77D00A1A780 /* JSONIterators.o */,
+				CDD87C1D1AB5E77D00A1A780 /* JSONMemory.o */,
+				CDD87C1E1AB5E77D00A1A780 /* JSONNode.o */,
+				CDD87C1F1AB5E77D00A1A780 /* JSONNode_Mutex.o */,
+				CDD87C201AB5E77D00A1A780 /* JSONPreparse.o */,
+				CDD87C211AB5E77D00A1A780 /* JSONStream.o */,
+				CDD87C221AB5E77D00A1A780 /* JSONValidator.o */,
+				CDD87C231AB5E77D00A1A780 /* JSONWorker.o */,
+				CDD87C241AB5E77D00A1A780 /* JSONWriter.o */,
+				CDD87C251AB5E77D00A1A780 /* libjson.o */,
+			);
+			path = Objects_static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +678,16 @@
 			mainGroup = 4FD4E9E01AB4FC2C005FB77A;
 			productRefGroup = 4FD4E9EA1AB4FC2D005FB77A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CDD87C131AB5E77D00A1A780 /* Products */;
+					ProjectRef = CDD87C121AB5E77D00A1A780 /* libjson.xcodeproj */;
+				},
+				{
+					ProductGroup = CDD87BAC1AB5E77D00A1A780 /* Products */;
+					ProjectRef = CDD87BAB1AB5E77D00A1A780 /* TestSuite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4FD4E9E81AB4FC2D005FB77A /* commentAnalyzer */,
@@ -123,12 +695,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CDD87C291AB5E77D00A1A780 /* TestSuite */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = TestSuite;
+			remoteRef = CDD87C281AB5E77D00A1A780 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FD4E9E51AB4FC2D005FB77A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4FD4E9F61AB4FC4E005FB77A /* main.cpp in Sources */,
+				CDD87C621AB5ECF100A1A780 /* csvReader.cpp in Sources */,
 				4FD4E9F41AB4FC46005FB77A /* comment.cpp in Sources */,
 				4FD4E9FA1AB4FDD3005FB77A /* phraseAnalyzer.cpp in Sources */,
 			);
@@ -140,7 +723,7 @@
 		4FD4E9EE1AB4FC2D005FB77A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -170,9 +753,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "/Users/nazlibozoglu/Desktop/projects/cbchackathon/analysis/commentAnalyzer/libjson/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -180,7 +766,7 @@
 		4FD4E9EF1AB4FC2D005FB77A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -205,8 +791,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "/Users/nazlibozoglu/Desktop/projects/cbchackathon/analysis/commentAnalyzer/libjson/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -214,6 +803,11 @@
 		4FD4E9F11AB4FC2D005FB77A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/nazlibozoglu/Desktop/projects/cbchackathon/analysis/commentAnalyzer/libjson/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -221,6 +815,11 @@
 		4FD4E9F21AB4FC2D005FB77A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/nazlibozoglu/Desktop/projects/cbchackathon/analysis/commentAnalyzer/libjson/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -244,6 +843,7 @@
 				4FD4E9F21AB4FC2D005FB77A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,7 +21,7 @@ private:
     
 public:
     PhraseAnalyzer(std::string phrase);
-    int scorePhrase();
+    double scorePhrase();
 };
 
 #endif /* defined(__commentAnalyzer__phraseAnalyzer__) */

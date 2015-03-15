@@ -6,14 +6,14 @@
 class Comment
 {
 private:
-    int commentScore;
+    double commentScore;
  
     Comment() { } // private default constructor
  
 public:
     Comment(std::string commentText, std::string commenterName);
  
-    int getCommentScore(){ return commentScore; };
+    double getCommentScore(){ return commentScore; };
  
 };
  

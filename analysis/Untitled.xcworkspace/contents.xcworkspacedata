@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:commentAnalyzer/libjson/libjson.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:commentAnalyzer/commentAnalyzer.xcodeproj">
+   </FileRef>
+</Workspace>
