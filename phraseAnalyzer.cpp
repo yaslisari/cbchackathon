@@ -9,7 +9,7 @@
 #include "phraseAnalyzer.h"
 #include <iostream>
 #include <fstream>
-#include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -19,6 +19,7 @@ struct words{
     int locationInWordsVector;
     words() : count(0) {} //instead of int count = 0
 };
+
 
 void printVector(vector<string> v){
     for (int i = 0; i < v.size(); i++) {
@@ -47,6 +48,7 @@ vector<string> stringToVector(string st){
     char *p = strtok(writable, " ,.?!;");
     while (p) {
         string word = p;
+        transform(word.begin(), word.end(), word.begin(), ::tolower);
         stVector.push_back(word);
         //string a = questionsVector.at(i).wordsInQuestion.at(0).word;
         //cout << "first word is: " << a << endl;
@@ -73,6 +75,7 @@ vector<string> loadWordVectors(string fileLocation){
          //   getline(wordsFile,line); // Saves the line in STRING.
         while (wordsFile >> word) {
             try {
+                 transform(word.begin(), word.end(), word.begin(), ::tolower);
                  wordsVector.push_back(word);
             } catch(exception& e){
                 cout << "Vector dimensions exceeded" << endl;
@@ -88,21 +91,54 @@ vector<string> loadWordVectors(string fileLocation){
     
 }
 
+int PhraseAnalyzer::scorePhrase(){
+    int score = 0;
+    
+    for (int i = 0; i < phraseVector.size(); i++) {
+        string currentWord = phraseVector.at(i);
+        
+        std::vector<std::string>::const_iterator it = std::find(stopWordsVector.begin(), stopWordsVector.end(), currentWord);
+        
+        if (it != stopWordsVector.end()) //this is a stopword, so dont test if it's pos or negative
+        {
+          //  std::cout << "Found '" << *it << "' in the vector." << std::endl;
+            continue;
+        }
+        
+        it = std::find(positiveWordsVector.begin(), positiveWordsVector.end(), currentWord);
+        
+        if (it != positiveWordsVector.end()) { //this is a positive word
+            std::cout << "Found '" << *it << "' in pos vector." << std::endl;
+            score++;
+            continue;
+        }
+        
+        it = std::find(negativeWordsVector.begin(), negativeWordsVector.end(), currentWord);
+        
+        if (it != negativeWordsVector.end()) { //this is a negative word
+            std::cout << "Found '" << *it << "' in neg vector." << std::endl;
+
+            score--;
+        }
+        
+    }
+    
+    return score;
+}
+
+
 PhraseAnalyzer::PhraseAnalyzer(string phrase){
     
     //load stop words
-    ifstream stopWordsFile;
-    vector<string> stopWordsVector = loadWordVectors("english.stop.txt");
+    stopWordsVector = loadWordVectors("english.stop.txt");
     
     //load positive list of words
-    ifstream positiveWordsFile;
-    vector<string> positiveWordsVector = loadWordVectors("positive-words.txt");
+    positiveWordsVector = loadWordVectors("positive-words.txt");
 
     //load positive list of words
-    ifstream negativeWordsFile;
-    vector<string> negativeWordsVector = loadWordVectors("negative-words.txt");
+    negativeWordsVector = loadWordVectors("negative-words.txt");
     
-    vector<string> phraseVector = stringToVector(phrase);    
+    phraseVector = stringToVector(phrase);
     
     
 }
