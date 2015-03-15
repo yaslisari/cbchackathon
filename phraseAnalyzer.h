@@ -9,6 +9,11 @@
 #ifndef __commentAnalyzer__phraseAnalyzer__
 #define __commentAnalyzer__phraseAnalyzer__
 
-#include <stdio.h>
+#include <string>
+
+class PhraseAnalyzer{
+public:
+    PhraseAnalyzer(std::string phrase);
+};
 
 #endif /* defined(__commentAnalyzer__phraseAnalyzer__) */
